@@ -20,7 +20,7 @@ packages = setuptools.find_packages(
 
 setuptools.setup(
     name='helpers',
-    version='0.0.1',
+    version='0.0.2',
     author='Arttu Manninen',
     author_email='arttu@kaktus.cc',
     description=description,
