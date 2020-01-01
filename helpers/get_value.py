@@ -15,7 +15,7 @@ def get_value(obj, path=None, default=None):
         raise AssertionError('Path is not a string or a list')
 
     key = path.pop(0)
-    if key not in obj:
+    if not obj or key not in obj:
         return default
 
     if not path:

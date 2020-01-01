@@ -31,6 +31,7 @@ class TestGetValue():
 
     @staticmethod
     def test_get_value_returns_default_when_path_not_found():
+        """ Test that default is returned when path is not found """
         assert get_value({}, 'foo', default='bar') == 'bar'
 
     @staticmethod
@@ -66,3 +67,13 @@ class TestGetValue():
         """ Test that get_value returns deep path value by reference from set """
         with pytest.raises(AssertionError):
             get_value({}, set(['foo', 'bar']))
+
+    @staticmethod
+    def test_get_value_returns_default_when_parent_is_null():
+        """ Test that get_value returns the default value if parent is null """
+        test_value = {
+            'foo': None
+        }
+        default_value = 'foobar'
+
+        assert get_value(test_value, 'foo.bar', default=default_value) == default_value
