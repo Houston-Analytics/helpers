@@ -4,5 +4,11 @@ language: python
 python:
   - "3.7"
 
+install:
+  - pip3 install pytest pytest-cov coveralls
+
 script:
-  - pytest tests
+  - pytest --cov=helpers tests
+
+after_success:
+  - coveralls

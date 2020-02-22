@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/adrenalin/config.svg?branch=master)](https://travis-ci.com/adrenalin/helpers)
+[![Build Status](https://travis-ci.com/adrenalin/helpers.svg?branch=master)](https://travis-ci.com/adrenalin/helpers) [![Coverage Status](https://coveralls.io/repos/github/adrenalin/helpers/badge.svg)](https://coveralls.io/github/adrenalin/helpers)
 
 ## get_connection_string
 
